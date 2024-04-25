@@ -1,0 +1,359 @@
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #10221b;
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 9%;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header.active {
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+  margin-right: auto;
+  font-size: 2.5rem;
+  color: #10221b;
+  font-weight: bolder;
+}
+
+.header .logo i {
+  color: #219150;
+}
+
+.header .navbar a {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  color: #10221b;
+}
+
+.header .navbar a:hover {
+  color: #219150;
+}
+
+.header .navbar #nav-close {
+  font-size: 5rem;
+  cursor: pointer;
+  color: #10221b;
+  display: none;
+}
+
+.header .icons a,
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: #10221b;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+  color: #219150;
+}
+
+.header #menu-btn {
+  display: none;
+}
+
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10000;
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+}
+
+.search-form.active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.search-form #close-search {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 6rem;
+}
+
+.search-form #close-search:hover {
+  color: #219150;
+}
+
+.search-form form {
+  width: 70rem;
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-form form input {
+  width: 100%;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+  padding-right: 2rem;
+}
+
+.search-form form input::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.search-form form input:-ms-input-placeholder {
+  color: #aaa;
+}
+
+.search-form form input::-ms-input-placeholder {
+  color: #aaa;
+}
+
+.search-form form input::placeholder {
+  color: #aaa;
+}
+
+.search-form form label {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.search-form form label:hover {
+  color: #219150;
+}
+
+.home {
+  padding: 0;
+}
+
+.home .box {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2rem 9%;
+}
+
+.home .box.second {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.home .box .content {
+  width: 50rem;
+}
+
+.home .box .content span {
+  font-size: 4rem;
+  color:#F9E79F;
+}
+
+.home .box .content h3 {
+  font-size: 6rem;
+  color: #219150;
+  padding-top: .5rem;
+  text-transform: uppercase;
+}
+
+.home .box .content p {
+  line-height: 2;
+  color: #10221b;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: #10221b;
+}
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+  opacity:0.7;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.5;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
